@@ -1,0 +1,311 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> dòng này để code chạy được trên các bản cũ của IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport chính là cái nhìn trên màn hình user, được tự động điều chỉnh nhờ các thẻ content của nó
+    initial-scale là độ zoom -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e13ace7e00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/assets/img/k_final.png" type="image/gif" />
+    <title>The Band</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <!-- Begin: nav  -->
+
+        <ul id="nav">
+          <li class="ngu-logo">
+            <a href="#"
+              ><img class="img-logo" src="/assets/img/k_final.png" alt="nope"
+            /></a>
+          </li>
+          <li><a href="#band">BAND</a></li>
+          <li><a href="#tour">TOUR</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a class="kk" href="#">MORE <i class="fas fa-caret-down"></i></a>
+            <ul class="subnav kk">
+              <li><a href="#">Merchandisa</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End: nav  -->
+
+        <!-- Begin: search button  -->
+        <div class="search">
+          <i class="fas fa-search"></i>
+        </div>
+        <div id="mobile-bar" class="barr">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- End: search button  -->
+      </div>
+      <div id="slider">
+        <div class="text-content">
+          <div class="text-heading">Chicago</div>
+          <div class="text-description">
+            Thank you, Chicago - A night we won't forget.
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <!-- Khi phân tích cấu trúc page mà thấy có nhiều tiêu đề 
+        hiển thị chung một dạng thì nên đặt tên class trùng để tiết kiệm thời gian code  -->
+        <!-- THE BAND content  -->
+        <div id="band" class="content-section">
+          <h2 class="section-heading">THE BAND</h2>
+          <p class="section-sub-heading">We love music</p>
+          <p class="about">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="row text-center imgAbout">
+            <div class="col-4">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                class="rounded"
+                alt="img member"
+                width="70%"
+              />
+            </div>
+            <div class="col-4">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                class="rounded"
+                alt="img member"
+                width="70%"
+              />
+            </div>
+            <div class="col-4">
+              <p>Name</p>
+              <img
+                src="https://www.w3schools.com/w3images/bandmember.jpg"
+                class="rounded"
+                alt="img member"
+                width="70%"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- TOUR DATES content  -->
+        <div id="tour" class="tour-section">
+          <div class="content-section">
+            <h2 class="section-heading text-white">TOUR DATES</h2>
+            <p class="section-sub-heading text-white">
+              Remember to book your tickets!
+            </p>
+            <!-- danh sách vé -->
+            <ul class="ticket-list">
+              <li>
+                September <span class="sold-out text-white">Sold out</span>
+              </li>
+              <li>October <span class="sold-out text-white">Sold out</span></li>
+              <li>November <span class="quantity">3</span></li>
+            </ul>
+            <!-- danh sách địa điểm -->
+            <div class="rowK place-list">
+              <div class="colK colK-3">
+                <img
+                  src="/assets/img/places/newyork.jpg"
+                  alt="ny"
+                  class="place-img"
+                />
+                <div class="place-content">
+                  <h3 class="title-place">New York</h3>
+                  <p class="date-place" colK>Fri 27 Nov 2016</p>
+                  <p class="detals-place">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <a href="#" class="buy-tick">Buy Tickets</a>
+                </div>
+              </div>
+              <div class="colK colK-3">
+                <img
+                  src="/assets/img/places/paris.jpg"
+                  alt="pari"
+                  class="place-img"
+                />
+                <div class="place-content">
+                  <h3 class="title-place">Paris</h3>
+                  <p class="date-place">Sat 28 Nov 2016</p>
+                  <p class="detals-place">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <a href="#" class="buy-tick">Buy Tickets</a>
+                </div>
+              </div>
+              <div class="colK colK-3">
+                <img
+                  src="/assets/img/places/sanfran.jpg"
+                  alt="sanfran"
+                  class="place-img"
+                />
+                <div class="place-content">
+                  <h3 class="title-place">San Francisco</h3>
+                  <p class="date-place">Sun 29 Nov 2016</p>
+                  <p class="detals-place">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <a href="#" class="buy-tick">Buy Tickets</a>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEGIN: CONTACT content  -->
+        <div id="contact" class="content-section">
+          <h2 class="section-heading">CONTACT</h2>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+
+          <div class="rowK contact-formK">
+            <!-- begin: địa điểm và liên hệ  -->
+            <div class="colK colK-2 thong-tin">
+              <p class="nope">
+                <i class="fas fa-map-marker-alt nope2"></i>Chicago, US
+              </p>
+              <p class="nope">
+                <i class="fas fa-phone-alt nope2"></i>Phone:<a
+                  href="tel:+00 151515"
+                >
+                  +00 151515</a
+                >
+              </p>
+              <p class="nope">
+                <i class="fas fa-envelope nope2"></i>Email:<a
+                  href="mailto:mail@mail.com"
+                >
+                  mail@mail.com</a
+                >
+              </p>
+            </div>
+            <!-- end: địa điểm và liên hệ  -->
+
+            <!-- begin: form input thông tin -->
+            <div class="colK colK-2 input-thong-tin">
+              <form action="">
+                <div class="rowK">
+                  <div class="colK colK-2">
+                    <input type="text" placeholder="Name" class="input-ne" />
+                  </div>
+                  <div class="colK colK-2">
+                    <input
+                      required
+                      type="email"
+                      placeholder="Email"
+                      class="input-ne"
+                    />
+                  </div>
+                  <!-- là cái after gì đó nằm ở đây nè nhe -->
+                </div>
+                <div class="rowK" style="margin-top: 8px">
+                  <div class="colK colK-full">
+                    <input
+                      required
+                      type="text"
+                      placeholder="Message"
+                      class="input-ne"
+                    />
+                  </div>
+                  <!-- là cái after gì đó nằm ở đây nè nhe -->
+                </div>
+                <input
+                  required
+                  class="submit-ne"
+                  type="submit"
+                  value="SEND"
+                  style="margin-top: 16px"
+                />
+              </form>
+            </div>
+            <!-- end: form input thông tin -->
+          </div>
+        </div>
+        <!-- END: CONTACT content  -->
+
+        <!-- BEGIN: MAP  -->
+        <div class="map-section">
+          <img src="/assets/img/map.jpg" alt="map image" />
+        </div>
+        <!-- END: MAP  -->
+      </div>
+      <!-- BEGIN: footer  -->
+      <div id="footer">
+        <div class="icon-xahoi">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="powered">
+          Powered by
+          <a class="w3css" href="https://www.w3schools.com/w3css/default.asp"
+            >w3.css</a
+          >
+        </p>
+      </div>
+      <!-- END: MAfooterP  -->
+    </div>
+
+    <script>
+      //lấy sự kiện click và close/display barMenu
+      var header = document.getElementById("header");
+      var moblie = document.getElementById("mobile-bar");
+
+      var valueHeader = header.clientHeight;
+      moblie.onclick = function () {
+        var isClose = header.clientHeight === valueHeader;
+        if (isClose) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+      //tự động đóng khi click menu
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function (event) {
+          var isMenuBar =
+            this.nextElementSibling &&
+            this.nextElementSibling.classList.contains("subnav");
+          if (isMenuBar) {
+            event.preventDefault();
+          } else {
+            header.style.height = null;
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

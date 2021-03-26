@@ -1,0 +1,5 @@
+Giá trị xác định chiều ngang thiết bị để thực hiện reponsive (đúng chuẩn tầm 99%)
+
+PC: >= 1024px               (min-width: 1024px)
+Tablet: >=740  và <1024     (min-width: 740px) and (max-width: 1023px)
+Mobile: <740                (max-width: 739px)
