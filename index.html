@@ -1,311 +1,346 @@
+<!-- Project AboutMe by Khuong -->
+
+<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> dòng này để code chạy được trên các bản cũ của IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- viewport chính là cái nhìn trên màn hình user, được tự động điều chỉnh nhờ các thẻ content của nó
-    initial-scale là độ zoom -->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/mobile.css" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Khuong | FPT University</title>
+    <!-- icon page -->
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
+      rel="icon"
+      href="/assets/img/k_final.png"
+      type="image/gif"
+      sizes="20x20"
     />
+
+    <!-- fonticons -->
     <script
-      src="https://kit.fontawesome.com/e13ace7e00.js"
+      src="https://kit.fontawesome.com/50d71f6466.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="/assets/img/k_final.png" type="image/gif" />
-    <title>The Band</title>
+
+    <!-- google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+
+    <!-- stylesheet -->
+    <link href="/assets/css/styleSheet.css" rel="stylesheet" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" />
+    <!-- stylesheet -->
+    <!--		add thư viện hiệu ứng bằng javascipt -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!--		Jquery-->
+    <!--js script	đoạn javascripts này chắc để phục vụ cho cac loại hiệu ứng	-->
+
+    <!--js script		-->
   </head>
+
   <body>
-    <div id="main">
-      <div id="header">
-        <!-- Begin: nav  -->
+    <header>
+      <div class="nav-icon"><i class="fas fa-bars"></i></div>
 
-        <ul id="nav">
-          <li class="ngu-logo">
-            <a href="#"
-              ><img class="img-logo" src="/assets/img/k_final.png" alt="nope"
-            /></a>
-          </li>
-          <li><a href="#band">BAND</a></li>
-          <li><a href="#tour">TOUR</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+      <div class="mobile-navbar">
+        <ul class="menu closed">
           <li>
-            <a class="kk" href="#">MORE <i class="fas fa-caret-down"></i></a>
-            <ul class="subnav kk">
-              <li><a href="#">Merchandisa</a></li>
-              <li><a href="#">Extras</a></li>
-              <li><a href="#">Media</a></li>
-            </ul>
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
           </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
-        <!-- End: nav  -->
+      </div>
+      <!--thẻ nav chứa các đường dẫn gọi các section để con trỏ tự lăn tới nội dung cần xem-->
+      <nav id="navbar" class="nav">
+        <a href="#about-me">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
+    </header>
 
-        <!-- Begin: search button  -->
-        <div class="search">
-          <i class="fas fa-search"></i>
-        </div>
-        <div id="mobile-bar" class="barr">
-          <i class="fas fa-bars"></i>
-        </div>
-        <!-- End: search button  -->
-      </div>
-      <div id="slider">
-        <div class="text-content">
-          <div class="text-heading">Chicago</div>
-          <div class="text-description">
-            Thank you, Chicago - A night we won't forget.
+    <div class="container">
+      <!--thẻ section sẽ chia code ra dễ nhìn hơn nhờ vào tên id đã đặt đồng thời giúp dễ hiểu hơn khi lâu ngày nhìn lại code-->
+      <section class="welcome-sec" id="welcome-section">
+        <div class="welcome-part">
+          <div class="photo-div">
+            <img
+              src="/assets/img/kaito.png"
+              alt="profile-picture"
+              class="photo"
+            />
           </div>
+          <h1>Hi, I'm <span>Khuong.</span></h1>
+          <p>I'm a student FPT Can Tho university.</p>
         </div>
-      </div>
-      <div id="content">
-        <!-- Khi phân tích cấu trúc page mà thấy có nhiều tiêu đề 
-        hiển thị chung một dạng thì nên đặt tên class trùng để tiết kiệm thời gian code  -->
-        <!-- THE BAND content  -->
-        <div id="band" class="content-section">
-          <h2 class="section-heading">THE BAND</h2>
-          <p class="section-sub-heading">We love music</p>
-          <p class="about">
-            We have created a fictional band website. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+
+        <div class="about not-visible" id="about-me">
+          <h2>About me</h2>
+          <p>
+            I am studen in FPT CAN THO university. I am a creative front end
+            developer who like making beautiful and smart things through coding.
+            I like playing game, listening to music ...
           </p>
-          <div class="row text-center imgAbout">
-            <div class="col-4">
-              <p>Name</p>
-              <img
-                src="https://www.w3schools.com/w3images/bandmember.jpg"
-                class="rounded"
-                alt="img member"
-                width="70%"
-              />
+
+          <div class="social">
+            <!--target="_blank"-->
+            <a class="profile-link" href="https://github.com/khuongkg1412"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="profile-link" href="https://codepen.io/khuongkg1412"
+              ><i class="fab fa-codepen"></i
+            ></a>
+            <a class="profile-link" href="https://twitter.com/Pinul11"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="profile-link"
+              href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contain">
+          <div class="circle left colored"></div>
+          <div class="circle right"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-sec">
+        <div class="sec-title"><h2>PROJECTS</h2></div>
+
+        <div class="project-container">
+          <!--lí do đặt nhiều class là để dễ trang trí web hơn bằng css, class càng chi tiết thì css sẽ được áp dụng càng chi tiết-->
+          <div class="proj-contain project-1">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/tabbar.png"
+              alt="huddle-desktop-preview"
+            />
+
+            <div class="project-title">
+              <!-- tab bar aniamation -->
+              <h6>Tab Bar Animation</h6>
+              <p>Quality</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                </ul>
+                <a
+                  class="website-link"
+                  href="https://codepen.io/khuongkg1412/pen/gOwqEBL"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
             </div>
-            <div class="col-4">
-              <p>Name</p>
-              <img
-                src="https://www.w3schools.com/w3images/bandmember.jpg"
-                class="rounded"
-                alt="img member"
-                width="70%"
-              />
+          </div>
+
+          <div class="proj-contain project-2">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/balo.png"
+              alt="ping-desktop-preview"
+            />
+
+            <div class="project-title">
+              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
+              <h6>Kaito Balo</h6>
+              <p>This is normal balo</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://codepen.io/khuongkg1412/pen/VwKgNyb"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
             </div>
-            <div class="col-4">
-              <p>Name</p>
-              <img
-                src="https://www.w3schools.com/w3images/bandmember.jpg"
-                class="rounded"
-                alt="img member"
-                width="70%"
-              />
+          </div>
+
+          <div class="proj-contain project-3">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/soon.png"
+              alt="Documentation-page-desktop-view"
+            />
+
+            <div class="project-title">
+              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
+              <h6>Coming soon</h6>
+              <p>Doing...</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-contain project-4">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/soon.png"
+              alt="JavaScript-Drum-Kit-desktop-view"
+            />
+
+            <div class="project-title">
+              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
+              <h6>Coming soon</h6>
+              <p>Doing...</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+              x
+            </div>
+          </div>
+
+          <div class="proj-contain project-5">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/soon.png"
+              alt="PixelArt-desktop-view"
+            />
+
+            <div class="project-title">
+              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
+              <h6>Coming soon</h6>
+              <p>Doing...</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                </ul>
+
+                <a
+                  class="website-link"
+                  href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-contain project-6">
+            <img
+              class="proj-screenshot"
+              src="/assets/img/soon.png"
+              alt="SurveyForm-desktop-view"
+            />
+
+            <div class="project-title">
+              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
+              <h6>Coming soon</h6>
+              <p>Doing...</p>
+              <div class="links">
+                <ul class="k">
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-html5"></i></li>
+                </ul>
+                <!--https://codepen.io/nohazZz/full/PxQOKW -->
+                <a
+                  class="website-link"
+                  href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+                  target="_blank"
+                  >Go To Website</a
+                >
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- TOUR DATES content  -->
-        <div id="tour" class="tour-section">
-          <div class="content-section">
-            <h2 class="section-heading text-white">TOUR DATES</h2>
-            <p class="section-sub-heading text-white">
-              Remember to book your tickets!
-            </p>
-            <!-- danh sách vé -->
-            <ul class="ticket-list">
-              <li>
-                September <span class="sold-out text-white">Sold out</span>
-              </li>
-              <li>October <span class="sold-out text-white">Sold out</span></li>
-              <li>November <span class="quantity">3</span></li>
-            </ul>
-            <!-- danh sách địa điểm -->
-            <div class="rowK place-list">
-              <div class="colK colK-3">
-                <img
-                  src="/assets/img/places/newyork.jpg"
-                  alt="ny"
-                  class="place-img"
-                />
-                <div class="place-content">
-                  <h3 class="title-place">New York</h3>
-                  <p class="date-place" colK>Fri 27 Nov 2016</p>
-                  <p class="detals-place">
-                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                  </p>
-                  <a href="#" class="buy-tick">Buy Tickets</a>
-                </div>
-              </div>
-              <div class="colK colK-3">
-                <img
-                  src="/assets/img/places/paris.jpg"
-                  alt="pari"
-                  class="place-img"
-                />
-                <div class="place-content">
-                  <h3 class="title-place">Paris</h3>
-                  <p class="date-place">Sat 28 Nov 2016</p>
-                  <p class="detals-place">
-                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                  </p>
-                  <a href="#" class="buy-tick">Buy Tickets</a>
-                </div>
-              </div>
-              <div class="colK colK-3">
-                <img
-                  src="/assets/img/places/sanfran.jpg"
-                  alt="sanfran"
-                  class="place-img"
-                />
-                <div class="place-content">
-                  <h3 class="title-place">San Francisco</h3>
-                  <p class="date-place">Sun 29 Nov 2016</p>
-                  <p class="detals-place">
-                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                  </p>
-                  <a href="#" class="buy-tick">Buy Tickets</a>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BEGIN: CONTACT content  -->
-        <div id="contact" class="content-section">
-          <h2 class="section-heading">CONTACT</h2>
-          <p class="section-sub-heading">Fan? Drop a note!</p>
-
-          <div class="rowK contact-formK">
-            <!-- begin: địa điểm và liên hệ  -->
-            <div class="colK colK-2 thong-tin">
-              <p class="nope">
-                <i class="fas fa-map-marker-alt nope2"></i>Chicago, US
-              </p>
-              <p class="nope">
-                <i class="fas fa-phone-alt nope2"></i>Phone:<a
-                  href="tel:+00 151515"
-                >
-                  +00 151515</a
-                >
-              </p>
-              <p class="nope">
-                <i class="fas fa-envelope nope2"></i>Email:<a
-                  href="mailto:mail@mail.com"
-                >
-                  mail@mail.com</a
-                >
-              </p>
-            </div>
-            <!-- end: địa điểm và liên hệ  -->
-
-            <!-- begin: form input thông tin -->
-            <div class="colK colK-2 input-thong-tin">
-              <form action="">
-                <div class="rowK">
-                  <div class="colK colK-2">
-                    <input type="text" placeholder="Name" class="input-ne" />
-                  </div>
-                  <div class="colK colK-2">
-                    <input
-                      required
-                      type="email"
-                      placeholder="Email"
-                      class="input-ne"
-                    />
-                  </div>
-                  <!-- là cái after gì đó nằm ở đây nè nhe -->
-                </div>
-                <div class="rowK" style="margin-top: 8px">
-                  <div class="colK colK-full">
-                    <input
-                      required
-                      type="text"
-                      placeholder="Message"
-                      class="input-ne"
-                    />
-                  </div>
-                  <!-- là cái after gì đó nằm ở đây nè nhe -->
-                </div>
-                <input
-                  required
-                  class="submit-ne"
-                  type="submit"
-                  value="SEND"
-                  style="margin-top: 16px"
-                />
-              </form>
-            </div>
-            <!-- end: form input thông tin -->
-          </div>
-        </div>
-        <!-- END: CONTACT content  -->
-
-        <!-- BEGIN: MAP  -->
-        <div class="map-section">
-          <img src="/assets/img/map.jpg" alt="map image" />
-        </div>
-        <!-- END: MAP  -->
-      </div>
-      <!-- BEGIN: footer  -->
-      <div id="footer">
-        <div class="icon-xahoi">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-snapchat"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <p class="powered">
-          Powered by
-          <a class="w3css" href="https://www.w3schools.com/w3css/default.asp"
-            >w3.css</a
-          >
-        </p>
-      </div>
-      <!-- END: MAfooterP  -->
+        <a class="more show-link"
+          >show more<i class="fas fa-chevron-circle-down"></i
+        ></a>
+        <a class="less show-link toggle"
+          >show less<i class="fas fa-chevron-circle-up"></i
+        ></a>
+      </section>
     </div>
 
-    <script>
-      //lấy sự kiện click và close/display barMenu
-      var header = document.getElementById("header");
-      var moblie = document.getElementById("mobile-bar");
+    <section id="contact-me" class="contact">
+      <div class="contact-div">
+        <h2>Contact Me</h2>
 
-      var valueHeader = header.clientHeight;
-      moblie.onclick = function () {
-        var isClose = header.clientHeight === valueHeader;
-        if (isClose) {
-          header.style.height = "auto";
-        } else {
-          header.style.height = null;
-        }
-      };
-      //tự động đóng khi click menu
-      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-      for (var i = 0; i < menuItems.length; i++) {
-        var menuItem = menuItems[i];
+        <p>Want to send email to me? <span>Say Hello at:</span></p>
 
-        menuItem.onclick = function (event) {
-          var isMenuBar =
-            this.nextElementSibling &&
-            this.nextElementSibling.classList.contains("subnav");
-          if (isMenuBar) {
-            event.preventDefault();
-          } else {
-            header.style.height = null;
-          }
-        };
-      }
-    </script>
+        <p class="email">
+          <a href="mailto:khuongkg1412@gmail.com">khuongkg1412@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="social">
+        <a
+          class="profile-link"
+          href="https://github.com/khuongkg1412"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://codepen.io/khuongkg1412"
+          target="_blank"
+          ><i class="fab fa-codepen"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://twitter.com/Pinul11"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="profile-link"
+          href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer style="text-align: center" id="footer">
+      Copyright&copy;2020. Made by Khuong Nguyen.
+    </footer>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
