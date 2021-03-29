@@ -1,13 +1,10 @@
 <!-- Project AboutMe by Khuong -->
-
 <!DOCTYPE html>
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <title>Khuong | FPT University</title>
     <!-- icon page -->
     <link
@@ -16,15 +13,12 @@
       type="image/gif"
       sizes="20x20"
     />
-
     <!-- fonticons -->
     <script
       src="https://kit.fontawesome.com/50d71f6466.js"
       crossorigin="anonymous"
     ></script>
-
     <!-- google fonts -->
-
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
@@ -33,29 +27,20 @@
       href="https://fonts.googleapis.com/css?family=Gugi&display=swap"
       rel="stylesheet"
     />
-
-    <!-- google fonts -->
-
     <!-- stylesheet -->
     <link href="/assets/css/styleSheet.css" rel="stylesheet" />
     <link href="/assets/css/responsive.css" rel="stylesheet" />
-    <!-- stylesheet -->
-    <!--		add thư viện hiệu ứng bằng javascipt -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <!--		Jquery-->
-    <!--js script	đoạn javascripts này chắc để phục vụ cho cac loại hiệu ứng	-->
-
-    <!--js script		-->
   </head>
 
   <body>
     <header>
       <div class="nav-icon"><i class="fas fa-bars"></i></div>
-
+      <!-- thẻ nav cho mobile  -->
       <div class="mobile-navbar">
         <ul class="menu closed">
           <li>
@@ -66,16 +51,18 @@
           <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </div>
-      <!--thẻ nav chứa các đường dẫn gọi các section để con trỏ tự lăn tới nội dung cần xem-->
+
+      <!-- navbar cho page -->
       <nav id="navbar" class="nav">
         <a href="#about-me">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact-me">Contact Me</a>
       </nav>
     </header>
-
+    <!-- BEGIN: phần content  -->
     <div class="container">
-      <!--thẻ section sẽ chia code ra dễ nhìn hơn nhờ vào tên id đã đặt đồng thời giúp dễ hiểu hơn khi lâu ngày nhìn lại code-->
+      <!-- BEGIN: about me  -->
+
       <section class="welcome-sec" id="welcome-section">
         <div class="welcome-part">
           <div class="photo-div">
@@ -98,7 +85,6 @@
           </p>
 
           <div class="social">
-            <!--target="_blank"-->
             <a class="profile-link" href="https://github.com/khuongkg1412"
               ><i class="fab fa-github"></i
             ></a>
@@ -120,12 +106,14 @@
           <div class="circle right"></div>
         </div>
       </section>
+      <!-- END: about me  -->
 
+      <!-- BEGIN: show project  -->
       <section id="projects" class="projects-sec">
         <div class="sec-title"><h2>PROJECTS</h2></div>
-
+        <!-- list project -->
         <div class="project-container">
-          <!--lí do đặt nhiều class là để dễ trang trí web hơn bằng css, class càng chi tiết thì css sẽ được áp dụng càng chi tiết-->
+          <!-- project 1 -->
           <div class="proj-contain project-1">
             <img
               class="proj-screenshot"
@@ -134,7 +122,6 @@
             />
 
             <div class="project-title">
-              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
               <h6>The Band</h6>
               <p>Make with love</p>
               <div class="links">
@@ -153,7 +140,7 @@
               </div>
             </div>
           </div>
-
+          <!-- project 2 -->
           <div class="proj-contain project-2">
             <img
               class="proj-screenshot"
@@ -162,7 +149,6 @@
             />
 
             <div class="project-title">
-              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
               <h6>Kaito Balo</h6>
               <p>This is normal balo</p>
               <div class="links">
@@ -182,6 +168,7 @@
             </div>
           </div>
 
+          <!-- project 3 -->
           <div class="proj-contain project-3">
             <img
               class="proj-screenshot"
@@ -208,7 +195,7 @@
               </div>
             </div>
           </div>
-
+          <!-- project 4 -->
           <div class="proj-contain project-4">
             <img
               class="proj-screenshot"
@@ -217,7 +204,6 @@
             />
 
             <div class="project-title">
-              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
               <h6>Coming soon</h6>
               <p>Doing...</p>
               <div class="links">
@@ -236,7 +222,7 @@
               x
             </div>
           </div>
-
+          <!-- project 5 -->
           <div class="proj-contain project-5">
             <img
               class="proj-screenshot"
@@ -245,7 +231,6 @@
             />
 
             <div class="project-title">
-              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
               <h6>Coming soon</h6>
               <p>Doing...</p>
               <div class="links">
@@ -263,7 +248,7 @@
               </div>
             </div>
           </div>
-
+          <!-- project 6 -->
           <div class="proj-contain project-6">
             <img
               class="proj-screenshot"
@@ -272,7 +257,6 @@
             />
 
             <div class="project-title">
-              <!--page này chỉ ví dụ, bỏ project của mình vào đây -->
               <h6>Coming soon</h6>
               <p>Doing...</p>
               <div class="links">
@@ -280,7 +264,6 @@
                   <li><i class="fab fa-css3-alt"></i></li>
                   <li><i class="fab fa-html5"></i></li>
                 </ul>
-                <!--https://codepen.io/nohazZz/full/PxQOKW -->
                 <a
                   class="website-link"
                   href="https://www.linkedin.com/in/kh%C6%B0%C6%A1ng-nguy%E1%BB%85n-980729201/"
@@ -291,16 +274,21 @@
             </div>
           </div>
         </div>
+        <!-- nút show more/show less  -->
         <a class="more show-link"
-          >show more<i class="fas fa-chevron-circle-down"></i
+          >SHOW MORE<i class="fas fa-chevron-circle-down"></i
         ></a>
         <a class="less show-link toggle"
-          >show less<i class="fas fa-chevron-circle-up"></i
+          >SHOW LESS<i class="fas fa-chevron-circle-up"></i
         ></a>
       </section>
+      <!-- END: show project  -->
     </div>
+    <!-- END: phần content  -->
 
+    <!-- BEGIN: phần contact và footer  -->
     <section id="contact-me" class="contact">
+      <!-- thông tin liên hệ  -->
       <div class="contact-div">
         <h2>Contact Me</h2>
 
@@ -311,6 +299,7 @@
         </p>
       </div>
 
+      <!-- icon mạng xã hội  -->
       <div class="social">
         <a
           class="profile-link"
@@ -342,6 +331,8 @@
     <footer style="text-align: center" id="footer">
       Copyright&copy;2020. Made by Khuong Nguyen.
     </footer>
+    <!-- END: phần contact và footer  -->
+
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
