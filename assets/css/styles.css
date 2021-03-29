@@ -1,0 +1,350 @@
+/* Reset css để bỏ qua các margin padding dư thừa của các div */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* box-sizing:làm cho phần tử có kích thước chính xác khi bạn khai báo,
+   tránh việc cộng thêm các phần border và padding sẽ gây ra rắc rối */
+}
+html {
+  font-family: "Lato", sans-serif !important;
+  scroll-behavior: smooth;
+}
+.clear {
+  clear: both;
+}
+
+.rowK {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.rowK::after {
+  /* rowK::after nghĩa là 
+  điền vào điểm cuối nằm trong thẻ rowK */
+  content: "";
+  display: block;
+  clear: both;
+}
+.colK {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.colK-2 {
+  width: 50%;
+}
+.colK-3 {
+  width: 33.33333%;
+}
+.colK-full {
+  width: 100%;
+}
+/* main css  */
+#main {
+}
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  /* z-index: ;  là thể hiện chiều sâu trên page, số càng to thì nó càng nổi lên */
+}
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style: none;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+  /* relative sẽ làm cho class đó phụ thuộc vào trục của trình duyệt  */
+}
+#nav >li:first-child{
+  display: inline-block;
+}
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+  /* text-transform: có thể đổi text in hoa và in thường */
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  /* line-height: giúp set chiều cao của từng dòng theo ý muốn
+giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ đọc */
+  padding: 0 24px;
+  display: block;
+}
+
+#nav .subnav a:hover,
+#nav > li:hover > a {
+  /* khai bao theo dạng > thể hiển mối quan hệ trực tiếp của các class */
+  color: black;
+  background-color: #ccc;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  /* position absolote phụ thuộc với một thẻ cha mang position  */
+  background-color: white;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+  /* box-shadow: giúp đổ bóng cho đối tượng khi ta muốn nó hiện đè lên nền, 
+  ví dụ như click vào chuông thông báo sẽ hiện ra một box danh sách nhỏ đè lên nền */
+  top: 100%;
+  left: 0;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav .subnav a {
+  color: black;
+  padding: 0 16px;
+  line-height: 38px;
+  min-width: 160px;
+}
+.search {
+  float: right;
+}
+.barr{
+  float: right;
+  position: absolute;
+  top: 0;right: 0;
+}
+
+#header .search:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+#header .barr:hover{
+  background-color: #ccc;
+  
+  cursor: pointer;
+}
+#header .barr:hover .fa-bars{
+  color: #000;
+}
+
+#header .fa-search {
+  color: white;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0 24px;
+}
+#header .fa-bars{
+  color: white;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0 24px;
+  
+}
+
+#slider {
+  /* min-height: 500px;
+  background-color: #333; */
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  /* 50% của chiều ngang á */
+
+  background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
+  /* cách viết ngắn gọn hơn,
+  gôm nhiều loại thuộc tính background chung một dòng */
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 48px;
+  color: white;
+  width: 100%;
+}
+#slider .text-heading {
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 400;
+  /* font-weight: đi từ 100 to 700 */
+  font-size: 24px;
+}
+#slider .text-description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+#content {
+}
+#content .content-section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px 112px 16px;
+  
+}
+.section-heading {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  /* font-weight: thẻ hiện độ dày của nét chữ */
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 4px;
+  /* letter-spacing: ảnh hưởng đến khoảng cách từng chữ cái trong một từ */
+}
+.section-sub-heading {
+  font-style: italic;
+  /* chữ nghiên chữ đậm đồ đó */
+  font-size: 15px;
+  text-align: center;
+  margin: 15px 0;
+  opacity: 0.7;
+}
+.about {
+  text-align: justify;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.imgAbout {
+  padding: 32px 0px;
+}
+.tour-section {
+  background-color: black;
+}
+.ticket-list {
+  list-style: none;
+  background-color: white;
+}
+.ticket-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+}
+.ticket-list .sold-out {
+  padding: 0px 8px;
+  background-color: #f44336;
+  margin-left: 16px;
+}
+.ticket-list .quantity {
+  float: right;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  padding: 0px 8px;
+}
+.place-list {
+  margin-top: 32px;
+}
+
+.place-img {
+  width: 100%;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-content {
+  background-color: white;
+  padding: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.title-place {
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.date-place {
+  opacity: 0.6;
+  color: #000;
+}
+.detals-place {
+}
+.buy-tick {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2.5px;
+  
+}
+.buy-tick:hover {
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+}
+.submit-ne {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+.submit-ne:hover {
+  background-color: #ccc;
+  color: #000;
+}
+/* contact form  */
+.contact-formK {
+  padding-top: 32px;
+}
+.thong-tin {
+  font-size: 18px;
+}
+.nope {
+  margin-bottom: 0px;
+}
+.nope2 {
+  width: 30px;
+}
+/* .input-thong-tin {
+  font-size: 15px;
+} */
+.input-ne {
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.map-section img {
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .fab {
+  font-size: 24px;
+  color: #666666;
+}
+.w3css:hover,
+#footer .fab:hover {
+  opacity: 0.7;
+}
+#footer .powered {
+  color: #666666;
+  font-size: 15px;
+  margin: 15px 0px;
+}
+#footer .w3css {
+  text-decoration: underline;
+  color: #666666;
+}
+.ngu-logo{
+  
+}
+.img-logo{
+  position: fixed;
+  top: 7px;
+  left: 10px;
+  
+
+}

@@ -1,0 +1,70 @@
+/* dùng đơn vị em vì nó ít lỗi vặt nhất khi chạy trên nhiều loại thiết bị */
+/* tablet and pc  */
+@media (min-width: 46.25em){
+    #header .fa-bars{
+        display: none;
+    }
+}
+/* tablet and moblie */
+@media (max-width: 63.9375em){
+    .w3css,
+    #footer .fab {
+        font-size: 36px;
+        color: #666666;
+        margin: 0px 6px;
+    }
+    .w3css:hover,
+    #footer .fab:hover {
+        opacity: 0.7;
+    }
+}
+/* mobile  */
+@media (max-width: 46.1875em){
+    #header{
+        overflow: hidden;
+    }
+    #header .fa-search {
+        display: none;
+      }
+    #nav {
+        display: block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: black;
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 4px 40px;
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        
+      }
+    .text-content{
+        display: none;
+    }
+    .ngu-logo{
+        margin-top: 46px;
+    }
+    .rounded{
+        width: 100%;
+    }
+    .colK{
+        width: 100%;
+        padding-bottom: 16px;
+    }     
+    .thong-tin{
+        line-height: 2;
+
+    }
+    .buy-tick {
+        width: 100%;
+        text-align: center;
+    }
+    .submit-ne{
+        width: 100%;
+    }
+    
+}
